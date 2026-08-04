@@ -1,0 +1,212 @@
+/* ===== RESET ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    background: #080b18;
+    overflow-x: hidden;
+    padding: 25px 15px;
+}
+
+
+/* ===== BACKGROUND ===== */
+
+.background {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background:
+        radial-gradient(circle at top left, rgba(0,140,255,0.35), transparent 40%),
+        radial-gradient(circle at bottom right, rgba(130,0,255,0.3), transparent 40%),
+        #080b18;
+}
+
+
+/* ===== HEADER ===== */
+
+header {
+    text-align: center;
+    margin: 20px auto 35px;
+}
+
+header h1 {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg,#00c6ff,#8a2be2);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: rgba(255,255,255,0.7);
+}
+
+
+/* ===== CARDS ===== */
+
+.card {
+    max-width: 500px;
+    margin: 20px auto;
+
+    padding: 25px;
+
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+
+    border-radius: 24px;
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.35);
+
+    transition: 0.35s ease;
+}
+
+
+.card:hover {
+    transform: translateY(-6px);
+    background: rgba(255,255,255,0.12);
+}
+
+
+.card h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+
+.card p {
+    color: rgba(255,255,255,0.8);
+    line-height: 1.6;
+}
+
+
+/* ===== LIST ===== */
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin: 12px 0;
+    padding: 12px 15px;
+
+    background: rgba(255,255,255,0.06);
+
+    border-radius: 14px;
+
+    color: rgba(255,255,255,0.9);
+
+    transition: 0.25s;
+}
+
+
+li:hover {
+    transform: translateX(8px);
+    background: rgba(255,255,255,0.12);
+}
+
+
+/* ===== TELEGRAM BUTTON ===== */
+
+.card a {
+
+    display: block;
+
+    margin-top: 15px;
+
+    padding: 16px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-weight: 600;
+
+    border-radius: 18px;
+
+    background:
+    linear-gradient(135deg,#0088cc,#00c6ff);
+
+    box-shadow:
+    0 10px 30px rgba(0,136,204,0.45);
+
+    transition: 0.3s ease;
+
+}
+
+
+.card a:hover {
+
+    transform: scale(1.04);
+
+    box-shadow:
+    0 15px 40px rgba(0,136,204,0.7);
+
+}
+
+
+.card a:active {
+    transform: scale(0.97);
+}
+
+
+/* ===== FOOTER ===== */
+
+footer {
+
+    text-align: center;
+
+    margin-top: 40px;
+
+    color: rgba(255,255,255,0.45);
+
+    font-size: 14px;
+
+}
+
+
+/* ===== MOBILE ===== */
+
+@media(max-width:500px){
+
+    body {
+        padding: 15px;
+    }
+
+
+    header h1 {
+        font-size: 40px;
+    }
+
+
+    .card {
+
+        padding: 20px;
+
+        border-radius: 20px;
+
+    }
+
+
+    .card h2 {
+
+        font-size: 20px;
+
+    }
+
+}
